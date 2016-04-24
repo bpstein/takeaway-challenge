@@ -1,5 +1,6 @@
 class Menu
 
+  MOUTHS_TO_FEED = 10
   MENU = {
     burger: 8,
     fries: 3, 
@@ -15,6 +16,14 @@ class Menu
 
   def show_menu 
     MENU
+  end
+
+  def make_order
+    @order = (MENU.keys.sample rand(MOUTHS_TO_FEED))
+  end 
+
+  def count_dishes 
+    @order.count 
   end
 
 end
