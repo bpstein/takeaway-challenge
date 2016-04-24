@@ -28,6 +28,11 @@ describe Menu do
       allow(order).to receive(:count)
       expect(menu.make_order.count).to be > 0
     end
+  
+    it "Correctly tallies the total price of the order" do 
+      # order = {burger: 8, fries: 3, schnitzel: 8, toasties: 5}
+      # expect(order.calculate_price).to eq 24
+    end
   end
 
 end

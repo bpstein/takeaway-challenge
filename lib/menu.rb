@@ -14,6 +14,10 @@ class Menu
     toasties: 5
   }
 
+  # def initialize(order = Order.new)
+  #   @order = order
+  # end
+
   def show_menu 
     MENU
   end
@@ -24,6 +28,11 @@ class Menu
 
   def count_dishes 
     @order.count 
+  end
+
+  def calculate_price
+    price = @order.map {|dish| MENU[dish] }
+    price.inject(&:+)
   end
 
 end

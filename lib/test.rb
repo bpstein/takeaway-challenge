@@ -1,4 +1,5 @@
 require './lib/menu'
+require './lib/order'
 
 menu = Menu.new
 
@@ -8,6 +9,7 @@ puts menu.show_menu
 puts
 puts menu.make_order
 puts menu.count_dishes
+puts menu.calculate_price
 
 
 
