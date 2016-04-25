@@ -1,25 +1,22 @@
-# require_relative 'menu'
-
 # class Order
 
-#   def order
-#     @order
-#   end
+#   attr_reader :order, :menu
 
-#   def initialize
-#     @order = nil
+#   def initialize 
+#     @order = order 
 #   end
 
 #   def make_order
-#     @order = (MENU.sample rand(MOUTHS_TO_FEED))
+#     (MENU.keys.sample rand(MOUTHS_TO_FEED))
 #   end 
 
 #   def count_dishes 
 #     @order.count 
 #   end
 
-#   def calculate_total
-#     # total = @order[x.map {|k, v| [k.to_sym, v.to_s] }]
+#   def calculate_price
+#     price = @order.map {|dish| MENU[dish] }
+#     price.inject(&:+)
 #   end
 
 # end

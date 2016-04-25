@@ -10,7 +10,8 @@ puts menu.print_menu
 puts
 puts menu.make_order
 puts menu.count_dishes
-puts menu.calculate_price
+puts menu.calculate_price(order)
+
 
 
 
