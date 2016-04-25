@@ -3,7 +3,7 @@ require 'menu'
 describe Menu do 
 
   subject(:menu)  {described_class.new}
-  let(:order)     {double :order}
+  let(:order)     {double(:order)}
 
   describe "Lists available dishes and prices" do 
     it "provides details of individual dishes" do 
